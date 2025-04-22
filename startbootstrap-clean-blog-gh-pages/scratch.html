@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Skiing: My Favorite Hobby</title>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #2E8BC0;
+            --secondary-color: #F8F8F8;
+            --accent-color: #145DA0;
+            --text-color: #222;
+            --bg-color: #ffffff;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Outfit', sans-serif;
+            background-color: var(--secondary-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .hero {
+            background: linear-gradient(rgba(46,139,192,0.8), rgba(46,139,192,0.8)), url('https://images.unsplash.com/photo-1542315192-1ff9f34b718d');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+        }
+
+        .btn {
+            margin-top: 20px;
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: var(--accent-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #0f3c68;
+        }
+
+        .section {
+            background-color: var(--bg-color);
+            margin: 40px auto;
+            padding: 40px;
+            border-radius: 12px;
+            max-width: 900px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        .section h2 {
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+
+        ol, ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        iframe {
+            width: 100%;
+            max-width: 100%;
+            height: 400px;
+            border-radius: 12px;
+            border: none;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        }
+
+        .footer {
+            background-color: var(--accent-color);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+
+        .footer a {
+            color: #ffffff;
+            margin: 0 10px;
+            text-decoration: underline;
+        }
+
+        .tableauPlaceholder {
+            max-width: 100%;
+            overflow: hidden;
+            border-radius: 12px;
+        }
+    </style>
+</head>
+<body id="top">
+
+    <div class="hero">
+        <h1>Welcome to My Skiing Page</h1>
+        <p>My passion for skiing runs deep — from carving fresh powder to backcountry adventures.</p>
+        <a href="#video" class="btn">Jump to Video</a>
+    </div>
+
+    <div class="section" id="lists">
+        <h2>Gear Checklist</h2>
+        <ol>
+            <li>Clothing
+                <ul>
+                    <li>Arc'teryx Jacket</li>
+                    <li>Baggy North Face Pants</li>
+                    <li>Head Gloves or Mittens</li>
+                    <li>32 Degree Thermals</li>
+                </ul>
+            </li>
+            <li>Equipment
+                <ul>
+                    <li>Atomic Bent Skis</li>
+                    <li>K2 Boots</li>
+                    <li>Pivot Bindings</li>
+                    <li>Smith Helmet</li>
+                    <li>Smith Goggles</li>
+                    <li>Stickers for Helmet</li>
+                </ul>
+            </li>
+        </ol>
+    </div>
+
+    <div class="section" id="image">
+        <h2>Favorite Spot</h2>
+        <img src="img/Gunsight.jpg" alt="Skiing in the mountains">
+    </div>
+    <div class="section" id="image">
+        <h2>Me and My Boys On the Mountain</h2>
+        <img src="img/IMG_7002.jpg" alt="Chillers on the mountain">
+    </div>
+    <div class="section" id="image">
+        <h2>Skiing at Night</h2>
+        <img src="img/DSC04301.JPG" alt="Night Scene">
+    </div>
+
+    <div class="section" id="video">
+        <h2>Skiing Hype Video</h2>
+        <iframe src="https://www.youtube.com/embed/r_ysEpytVUI" 
+            title="YouTube video player" allowfullscreen>
+        </iframe>
+    </div>
+    <div class="section" id="tableau">
+        <h2>Web Traffic Dashboard (Interactive Tableau)</h2>
+        <div class="tableauPlaceholder" id="viz1713733302732" style="width: 100%; height: 700px;">
+          <noscript>
+            <a href="https://public.tableau.com/views/WebTrafficDashboardRedesign/Cockpit">
+              <img alt="Web Traffic Dashboard"
+                   src="https://public.tableau.com/static/images/We/WebTrafficDashboardRedesign/Cockpit/1.png"
+                   style="border: none" />
+            </a>
+          </noscript>
+          <object class="tableauViz" width="100%" height="700">
+            <param name="host_url" value="https%3A%2F%2Fpublic.tableau.com%2F" />
+            <param name="embed_code_version" value="3" />
+            <param name="path" value="views/WebTrafficDashboardRedesign/Cockpit" />
+            <param name="toolbar" value="yes" />
+            <param name="static_image" value="https://public.tableau.com/static/images/We/WebTrafficDashboardRedesign/Cockpit/1.png" />
+            <param name="animate_transition" value="yes" />
+            <param name="display_static_image" value="yes" />
+            <param name="display_spinner" value="yes" />
+            <param name="display_overlay" value="yes" />
+            <param name="display_count" value="yes" />
+          </object>
+        </div>
+        <script type="text/javascript" src="https://public.tableau.com/javascripts/api/viz_v1.js"></script>
+      </div>
+
+    <footer class="footer">
+        <a href="#top">Back to Top</a> | 
+        <a href="index.html">Return to Professional Site</a> |
+        <a href="riddle.html">Riddle</a>
+    </footer>
+
+</body>
+</html>

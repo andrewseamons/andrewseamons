@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Riddle Generator</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #74ebd5, #acb6e5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      color: #333;
+    }
+
+    .container {
+      background-color: white;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      max-width: 500px;
+      width: 90%;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+      color: #2d4f73;
+    }
+
+    .riddle {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #2d4f73;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    button:hover {
+      background-color: #1b344d;
+    }
+
+    .answer {
+      font-style: italic;
+      color: #666;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🧠 Riddle Generator</h1>
+    <div class="riddle" id="riddle">Click the button to get a riddle!</div>
+    <div class="answer" id="answer"></div>
+    <button onclick="generateRiddle()">Generate Riddle</button>
+  </div>
+
+  <script>
+    const riddles = [
+      {
+        question: "What has to be broken before you can use it?",
+        answer: "An egg."
+      },
+      {
+        question: "I speak without a mouth and hear without ears. I have no body, but I come alive with wind. What am I?",
+        answer: "An echo."
+      },
+      {
+        question: "What can you catch, but not throw?",
+        answer: "A cold."
+      },
+      {
+        question: "I’m tall when I’m young, and I’m short when I’m old. What am I?",
+        answer: "A candle."
+      },
+      {
+        question: "What month of the year has 28 days?",
+        answer: "All of them."
+      }
+    ];
+
+    function generateRiddle() {
+      const riddle = riddles[Math.floor(Math.random() * riddles.length)];
+      document.getElementById('riddle').innerText = riddle.question;
+      document.getElementById('answer').innerText = riddle.answer;
+    }
+  </script>
+  <a href="index.html">Return to Professional Site</a>
+</body>
+</html>

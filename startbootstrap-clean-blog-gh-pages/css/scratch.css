@@ -1,0 +1,62 @@
+/* Custom Background */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Section Styling */
+.section {
+    padding: 40px 20px;
+}
+
+/* Image Styling */
+img {
+    width: 100%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+/* Button Link */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #ffffffaa;
+    padding: 10px 20px;
+    color: #000;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    background-color: #ddd;
+}
+
+/* Custom Fonts & Colors */
+h1, h2 {
+    font-family: 'Arial Black', Gadget, sans-serif;
+    color: #003366;
+}
+
+ul {
+    list-style-type: square;
+    color: #444;
+}
+
+ol {
+    color: #222;
+}
